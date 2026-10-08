@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Speaking Guide | Learn English with Emma</title>
+<style>
+@font-face { font-family: "DM Sans"; font-weight: 400; src: url("../assets/fonts/dm-sans-latin-400-normal.woff2") format("woff2"); }
+@font-face { font-family: "DM Sans"; font-weight: 700; src: url("../assets/fonts/dm-sans-latin-700-normal.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-weight: 600; src: url("../assets/fonts/playfair-display-latin-600-normal.woff2") format("woff2"); }
+@font-face { font-family: "Playfair Display"; font-weight: 600; font-style: italic; src: url("../assets/fonts/playfair-display-latin-600-italic.woff2") format("woff2"); }
+@page { size: A4; margin: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "DM Sans", Arial, sans-serif; font-size: 10.5pt; line-height: 1.5; color: #3A4256; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+.page { position: relative; width: 210mm; height: 297mm; padding: 20mm 18mm 22mm; overflow: hidden; page-break-after: always; background: #FBF7F0; }
+.page:last-child { page-break-after: auto; }
+h1, h2, h3 { margin: 0; font-family: "Playfair Display", Georgia, serif; font-weight: 600; color: #14213D; line-height: 1.15; }
+h2 { font-size: 24pt; margin-bottom: 4mm; }
+h3 { font-size: 13pt; margin: 5mm 0 2mm; }
+p { margin: 0 0 3mm; }
+.kick { margin-bottom: 2mm; font-size: 8.5pt; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: #E8920A; }
+.foot { position: absolute; left: 18mm; right: 18mm; bottom: 10mm; display: flex; justify-content: space-between; padding-top: 3mm; border-top: 0.3mm solid #DDDDDD; font-size: 8pt; color: #6B7285; }
+/* cover */
+.cover { padding: 0; background: #14213D; color: #C9CFDD; }
+.cover .top { padding: 18mm; display: flex; align-items: center; gap: 4mm; font-weight: 700; font-size: 12pt; color: #fff; }
+.cover .mark { display: inline-grid; place-items: center; width: 10mm; height: 10mm; border-radius: 1mm; background: #FCA311; color: #14213D; font-family: "Playfair Display"; font-size: 15pt; }
+.cover .top em { font-family: "Playfair Display"; font-weight: 600; }
+.cover .title { position: absolute; left: 18mm; right: 18mm; top: 78mm; }
+.cover .title small { display: block; margin-bottom: 4mm; font-size: 10pt; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; color: #FCA311; }
+.cover h1 { font-size: 54pt; line-height: 1.02; color: #fff; }
+.cover h1 em { color: #FCA311; }
+.cover .title p { max-width: 140mm; margin-top: 7mm; font-size: 13pt; line-height: 1.5; }
+.cover .band { position: absolute; left: 0; right: 0; bottom: 0; height: 64mm; padding: 14mm 18mm; background: #FBF7F0; color: #3A4256; }
+.cover .parts { display: grid; grid-template-columns: repeat(4, 1fr); gap: 4mm; }
+.cover .parts b { display: block; font-family: "Playfair Display"; font-size: 20pt; color: #14213D; line-height: 1.1; }
+.cover .parts span { font-size: 9pt; }
+.cover .band .line { position: absolute; left: 0; right: 0; top: 0; height: 2.5mm; background: #FCA311; }
+/* content */
+.steps { display: grid; gap: 4mm; margin-top: 6mm; }
+.step { display: grid; grid-template-columns: 12mm 1fr; gap: 4mm; padding: 5mm; border: 0.3mm solid #DDDDDD; border-radius: 1.5mm; background: #fff; }
+.step .n { display: grid; place-items: center; width: 10mm; height: 10mm; border-radius: 50%; background: #FCA311; font-weight: 700; color: #14213D; }
+.step h3 { margin: 0 0 1mm; font-family: "DM Sans"; font-size: 11.5pt; }
+.step p { margin: 0; }
+.note { margin-top: 8mm; padding: 5mm 6mm; border-left: 1.2mm solid #FCA311; background: #fff; }
+.cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5mm; margin-top: 4mm; }
+.col { padding: 4mm 5mm; border: 0.3mm solid #DDDDDD; border-radius: 1.5mm; background: #fff; }
+.col h3 { margin: 0 0 2mm; font-family: "DM Sans"; font-size: 10.5pt; color: #14213D; }
+.col ol { margin: 0; padding-left: 4.5mm; font-size: 9.5pt; }
+.col li { margin-bottom: 1.6mm; }
+table { width: 100%; border-collapse: collapse; margin: 3mm 0 2mm; background: #fff; font-size: 9.5pt; }
+th, td { padding: 2.2mm 3mm; text-align: left; border: 0.3mm solid #DDDDDD; }
+thead th { background: #14213D; color: #fff; font-weight: 700; }
+td b { color: #14213D; }
+.stress span { font-weight: 700; color: #E8920A; text-transform: uppercase; }
+.plan td:first-child { width: 22mm; font-weight: 700; color: #14213D; }
+.check { list-style: none; margin: 3mm 0 0; padding: 0; columns: 2; column-gap: 8mm; }
+.check li { position: relative; padding-left: 7mm; margin-bottom: 2mm; break-inside: avoid; }
+.check li::before { content: ""; position: absolute; left: 0; top: 0.8mm; width: 3.6mm; height: 3.6mm; border: 0.4mm solid #14213D; border-radius: 0.6mm; }
+.next { position: absolute; left: 18mm; right: 18mm; bottom: 22mm; padding: 6mm 7mm; border-radius: 1.5mm; background: #14213D; color: #C9CFDD; }
+.next h3 { margin: 0 0 1mm; color: #fff; }
+.next p { margin: 0; }
+.next b { color: #FCA311; }
+</style>
+</head>
+<body>
+
+<section class="page cover">
+  <div class="top"><span class="mark">E</span><span>Learn English <em>with Emma</em></span></div>
+  <div class="title">
+    <small>Workbook</small>
+    <h1>The Speaking <em>Guide</em></h1>
+    <p>Phrases, sounds and a 30-day plan to help you speak English with confidence.</p>
+  </div>
+  <div class="band">
+    <div class="line"></div>
+    <div class="parts">
+      <div><b>1</b><span>A daily speaking routine</span></div>
+      <div><b>30</b><span>small talk phrases</span></div>
+      <div><b>8</b><span>sound pairs to practise</span></div>
+      <div><b>30</b><span>days, 15 minutes each</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="page">
+  <p class="kick">Part 1</p>
+  <h2>How to use this guide</h2>
+  <p>Most students don't need more grammar. They need more practice saying things out loud, and a way to notice their own mistakes. This guide gives you both. Use it before class, after class, and on the days in between.</p>
+  <h3>The 3-step speaking routine</h3>
+  <p>Do this for 15 minutes a day. It works better than one long session a week.</p>
+  <div class="steps">
+    <div class="step"><span class="n">1</span><div><h3>Say it</h3><p>Pick one question from the list below and answer it out loud for one minute. Don't stop to fix mistakes. Keep going.</p></div></div>
+    <div class="step"><span class="n">2</span><div><h3>Record it</h3><p>Answer the same question again and record yourself on your phone. Listen back once.</p></div></div>
+    <div class="step"><span class="n">3</span><div><h3>Fix one thing</h3><p>Choose one thing to improve: a word, a sound or a sentence. Say the answer a third time with that one fix.</p></div></div>
+  </div>
+  <h3>Questions to answer</h3>
+  <table>
+    <tbody>
+      <tr><td>What did you do last weekend?</td><td>What's your job, and what do you like about it?</td></tr>
+      <tr><td>Describe the place where you live.</td><td>What's something you learned recently?</td></tr>
+      <tr><td>Tell me about a good meal you had.</td><td>What would you change about your city?</td></tr>
+    </tbody>
+  </table>
+  <div class="note"><strong>Tip from Emma:</strong> Speak first, check later. If you stop to translate every sentence, you practise translating, not speaking.</div>
+  <div class="foot"><span>Learn English with Emma · The Speaking Guide</span><span>2</span></div>
+</section>
+
+<section class="page">
+  <p class="kick">Part 2</p>
+  <h2>30 phrases for small talk</h2>
+  <p>Learn these as whole phrases, not word by word. Say each one out loud three times.</p>
+  <div class="cols">
+    <div class="col">
+      <h3>Starting</h3>
+      <ol>
+        <li>How's your week going?</li>
+        <li>Have you been busy today?</li>
+        <li>Did you do anything nice at the weekend?</li>
+        <li>How do you know Sam?</li>
+        <li>Is this your first time here?</li>
+        <li>That looks good. What is it?</li>
+        <li>How was the traffic this morning?</li>
+        <li>Have you worked here long?</li>
+        <li>I love your bag. Where's it from?</li>
+        <li>Lovely weather today, isn't it?</li>
+      </ol>
+    </div>
+    <div class="col">
+      <h3>Keeping it going</h3>
+      <ol>
+        <li>Oh really? How come?</li>
+        <li>That sounds fun. What was the best part?</li>
+        <li>I know what you mean.</li>
+        <li>Me too. / Me neither.</li>
+        <li>What made you choose that?</li>
+        <li>How did that go?</li>
+        <li>That's interesting. Tell me more.</li>
+        <li>I've never tried that. Is it hard?</li>
+        <li>Sorry, could you say that again?</li>
+        <li>So what's next for you?</li>
+      </ol>
+    </div>
+    <div class="col">
+      <h3>Leaving politely</h3>
+      <ol>
+        <li>It was really nice talking to you.</li>
+        <li>I'd better get going.</li>
+        <li>I'll let you get back to work.</li>
+        <li>Let's catch up properly soon.</li>
+        <li>Good luck with the interview.</li>
+        <li>Enjoy the rest of your day.</li>
+        <li>See you on Monday.</li>
+        <li>Say hi to your family for me.</li>
+        <li>Let me know how it goes.</li>
+        <li>Take care. Bye for now.</li>
+      </ol>
+    </div>
+  </div>
+  <div class="note"><strong>Practice:</strong> Pick one phrase from each column. Use all three in a real conversation this week, at work, in a shop or on a call.</div>
+  <div class="foot"><span>Learn English with Emma · The Speaking Guide</span><span>3</span></div>
+</section>
+
+<section class="page">
+  <p class="kick">Part 3</p>
+  <h2>Sounds that matter</h2>
+  <p>You don't need a perfect accent. You need to be easy to understand. These sound pairs cause the most confusion.</p>
+  <table>
+    <thead><tr><th>Sound pair</th><th>Say the difference</th><th>Try this sentence</th></tr></thead>
+    <tbody>
+      <tr><td><b>ship / sheep</b></td><td>short "i" / long "ee"</td><td>The sheep are on the ship.</td></tr>
+      <tr><td><b>live / leave</b></td><td>short "i" / long "ee"</td><td>I live here, but I leave at six.</td></tr>
+      <tr><td><b>full / fool</b></td><td>short "u" / long "oo"</td><td>Don't be a fool, the cup is full.</td></tr>
+      <tr><td><b>bed / bad</b></td><td>"e" / open "a"</td><td>A bad night in a hard bed.</td></tr>
+      <tr><td><b>think / sink</b></td><td>tongue between teeth for "th"</td><td>I think the sink is broken.</td></tr>
+      <tr><td><b>very / berry</b></td><td>top teeth on lip for "v"</td><td>A very big berry.</td></tr>
+      <tr><td><b>light / right</b></td><td>tongue up for "l", back for "r"</td><td>Turn right at the light.</td></tr>
+      <tr><td><b>walk / work</b></td><td>"aw" / "er"</td><td>I walk to work.</td></tr>
+    </tbody>
+  </table>
+  <h3>Word stress</h3>
+  <p>Put the stress on the right part of the word and people understand you, even if a sound is not perfect.</p>
+  <table class="stress">
+    <tbody>
+      <tr><td><span>pho</span>tograph</td><td>pho<span>to</span>graphy</td><td>photo<span>gra</span>phic</td></tr>
+      <tr><td><span>pre</span>sent (a gift)</td><td>pre<span>sent</span> (to show)</td><td>presen<span>ta</span>tion</td></tr>
+      <tr><td><span>com</span>fortable</td><td><span>ve</span>getable</td><td><span>in</span>teresting</td></tr>
+    </tbody>
+  </table>
+  <div class="note"><strong>Tip from Emma:</strong> Record the sentences above, then listen with your eyes closed. Which words are hard to hear? Practise only those.</div>
+  <div class="foot"><span>Learn English with Emma · The Speaking Guide</span><span>4</span></div>
+</section>
+
+<section class="page">
+  <p class="kick">Part 4</p>
+  <h2>Your 30-day plan</h2>
+  <p>15 minutes a day. Tick each day when you finish.</p>
+  <table class="plan">
+    <thead><tr><th>Week</th><th>Focus</th><th>Every day</th></tr></thead>
+    <tbody>
+      <tr><td>Week 1</td><td>Speaking without stopping</td><td>The 3-step routine with one question from Part 1</td></tr>
+      <tr><td>Week 2</td><td>Small talk</td><td>Learn 5 phrases from Part 2 and use 2 of them</td></tr>
+      <tr><td>Week 3</td><td>Sounds</td><td>Record two sound pairs from Part 3 and fix one</td></tr>
+      <tr><td>Week 4</td><td>Putting it together</td><td>Talk for two minutes about your day, then record it</td></tr>
+      <tr><td>Days 29 and 30</td><td>Look back</td><td>Listen to your first recording and your last. Notice the difference.</td></tr>
+    </tbody>
+  </table>
+  <h3>Before your live class</h3>
+  <ul class="check">
+    <li>Test Zoom and your headphones</li>
+    <li>Write one situation where English is hard for you</li>
+    <li>Have this guide open</li>
+    <li>Keep a notebook for new phrases</li>
+    <li>Join five minutes early</li>
+    <li>Turn notifications off for an hour</li>
+  </ul>
+  <div class="next">
+    <h3>Practise with Emma, live</h3>
+    <p>Small classes on Zoom, 12 students at most. <b>$35 per class</b>, or the 8-week course with two classes a week. Book at the class page or reply to any of Emma's emails.</p>
+  </div>
+  <div class="foot"><span>Learn English with Emma · The Speaking Guide</span><span>5</span></div>
+</section>
+
+</body>
+</html>
