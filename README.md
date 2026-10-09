@@ -29,11 +29,28 @@ Class times are set in UTC at the top of `assets/site.js` and shown in each visi
 
 - Free live class: Wednesday and Saturday, 13:30 UTC (7:00 PM in India)
 - Paid live classes ($35): Monday and Thursday, 13:30 UTC, topics listed in `TOPICS`
-- The 8-week course starts every Monday
+- The 8-week course: a new group starts every week, on Monday 13:30 UTC
+
+Bookings close 2 hours before a class starts.
 
 ## Payments
 
-Checkout collects the plan and the student's details, then sends them to your payment page. Paste a Stripe Payment Link, Razorpay or PayPal link into `paymentUrl` at the top of `assets/site.js`. Card details are never collected on this site. With `paymentUrl` empty, checkout goes straight to the confirmation page (demo mode).
+Checkout collects the plan and the student's details, then sends them to your payment page. Card details are never collected on this site.
+
+Add one payment link per plan in `paymentLinks` at the top of `assets/site.js` (Stripe Payment Links, Razorpay or PayPal):
+
+| Key | Price |
+| --- | --- |
+| `single` | $35 single class |
+| `pack` | $119 4-class pack |
+| `course` | $249 course, attendee price |
+| `courseFull` | $299 course, full price |
+
+A booking reference and the student's email are added to the link. With no link set, checkout goes straight to the confirmation page (demo mode).
+
+## Attendee price
+
+The course is $299. People who sign up for a free class get $249 until 48 hours after their class ends; the pages switch back to $299 on their own when the time runs out. In emails 3 and 4, point `{{course_link}}` at `offer.html?attendee=1` on your domain so the price also works on another phone or browser.
 
 To receive sign-ups and bookings, paste a form endpoint (Formspree, a Make or Zapier webhook, or your email tool's form URL) into `endpoint`.
 

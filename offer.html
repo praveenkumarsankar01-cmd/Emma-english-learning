@@ -49,11 +49,11 @@
 <main>
   <section class="offer-hero">
     <div class="wrap narrow">
-      <p class="deadline" data-offer-open><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Attendee price until <span data-offer-date>soon</span></p>
+      <p class="deadline" data-offer-open hidden><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>Attendee price until <span data-offer-date>soon</span></p>
       <p class="kicker">The 8-week course</p>
       <h1>Confident English in 8 weeks</h1>
       <p class="lead">Two small live classes a week, a workbook to practise with, and feedback from Emma on your own speaking. By week 8 you'll answer, explain and small-talk without stopping to translate.</p>
-      <a class="btn btn-amber btn-lg" href="checkout.html?plan=course">Join for $249 <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a class="btn btn-amber btn-lg" href="checkout.html?plan=course">Join for <span data-course-price>$299</span> <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
       <p class="fine">Or <a href="checkout.html?plan=single">book a single class for $35</a>.</p>
     </div>
   </section>
@@ -131,15 +131,15 @@
           <span class="plan-badge">Best value</span>
           <h3>Confident English</h3>
           <p class="plan-sub">The full 8-week course.</p>
-          <p class="plan-price"><s>$299</s><b>$249</b></p>
-          <p class="plan-per">16 live classes, about $15.50 each</p>
+          <p class="plan-price"><s data-course-was hidden>$299</s><b data-course-price>$299</b></p>
+          <p class="plan-per">16 live classes, about <span data-course-each>$18.70</span> each</p>
           <ul class="ticks">
             <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Everything above, for 8 weeks</li>
             <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>The Speaking Guide workbook</li>
             <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Weekly voice-note feedback</li>
             <li><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Certificate when you finish</li>
           </ul>
-          <a class="btn btn-amber btn-block" href="checkout.html?plan=course">Join for $249</a>
+          <a class="btn btn-amber btn-block" href="checkout.html?plan=course">Join for <span data-course-price>$299</span></a>
         </article>
         <article class="plan">
           <h3>4-class pack</h3>
@@ -156,15 +156,18 @@
       </div>
 
       <div class="offer-box on-navy offer-timer">
-        <div data-offer-open>
+        <div data-offer-open hidden>
+          <p class="timer-note" data-offer-later hidden>The $249 attendee price is yours until 48 hours after your class: <strong data-offer-date>soon</strong>.</p>
+          <div data-offer-soon>
           <p class="timer-note">The $249 attendee price for the course ends in</p>
           <div class="timer" data-timer>
             <div><b data-h>48</b><span>hours</span></div>
             <div><b data-m>00</b><span>min</span></div>
             <div><b data-s>00</b><span>sec</span></div>
           </div>
+          </div>
         </div>
-        <p class="timer-note" data-offer-closed hidden>The attendee price has ended. The course is now $299.</p>
+        <p class="timer-note" data-offer-closed>Came to a free class? You get the course for $249 for 48 hours after it. Right now the price is $299.</p>
       </div>
     </div>
   </section>
@@ -224,7 +227,7 @@
       <div class="faq-list">
         <details open>
           <summary>When does the course start?</summary>
-          <p>A new group starts every Monday. You choose your start date at checkout.</p>
+          <p>A new group starts every week. You choose your start date at checkout.</p>
         </details>
         <details>
           <summary>What if I miss a class?</summary>
@@ -249,8 +252,8 @@
   <section class="cta-band">
     <div class="wrap narrow">
       <h2>Ready to speak up?</h2>
-      <p>Join the next group on Monday. First-class guarantee included.</p>
-      <a class="btn btn-amber btn-lg" href="checkout.html?plan=course">Join for $249 <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <p>Join the next group. First-class guarantee included.</p>
+      <a class="btn btn-amber btn-lg" href="checkout.html?plan=course">Join for <span data-course-price>$299</span> <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></a>
     </div>
   </section>
 </main>

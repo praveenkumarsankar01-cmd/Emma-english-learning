@@ -60,20 +60,23 @@
         <div class="plan-pick">
           <label class="choice"><input type="radio" name="plan" value="single"><span><b>Single live class</b><small>$35</small></span></label>
           <label class="choice"><input type="radio" name="plan" value="pack"><span><b>4-class pack</b><small>$119</small></span></label>
-          <label class="choice"><input type="radio" name="plan" value="course"><span><b>Confident English, 8 weeks</b><small data-course-price>$249</small></span></label>
+          <label class="choice"><input type="radio" name="plan" value="course"><span><b>Confident English, 8 weeks</b><small data-course-price>$299</small></span></label>
         </div>
         <p class="err"></p>
       </fieldset>
 
+      <p class="notice" data-class-note hidden>That class is full or has already started, so we picked the next one for you. You can change it below.</p>
       <div class="field" data-pick-class>
-        <label for="c-class">Choose your class</label>
+        <label for="c-class" data-class-label>Choose your class</label>
         <select class="select" id="c-class" name="classId"></select>
         <p class="hint fine">Times are shown in <span data-tz>your local time</span>.</p>
+        <p class="err"></p>
       </div>
       <div class="field" data-pick-start hidden>
         <label for="c-start">Start date</label>
         <select class="select" id="c-start" name="startDate"></select>
-        <p class="hint fine">A new group starts every Monday.</p>
+        <p class="hint fine">A new group starts every week.</p>
+        <p class="err"></p>
       </div>
 
       <h2 class="form-title">Your details</h2>
@@ -158,10 +161,10 @@
       <div class="summary">
         <h2>Order summary</h2>
         <div class="sum-row"><span>Plan</span><span data-sum-plan>Confident English, 8 weeks</span></div>
-        <div class="sum-row"><span>When</span><span data-sum-when>Starts Monday</span></div>
+        <div class="sum-row"><span>When</span><span data-sum-when>Next week</span></div>
         <div class="sum-row"><span>Includes</span><span data-sum-note>16 live classes and the Speaking Guide</span></div>
-        <div class="sum-row" data-sum-was><span>Attendee price</span><span>−$50</span></div>
-        <div class="sum-total"><span>Total (USD)</span><b data-sum-total>$249</b></div>
+        <div class="sum-row" data-sum-was hidden><span>Attendee price</span><span>−$50</span></div>
+        <div class="sum-total"><span>Total (USD)</span><b data-sum-total>$299</b></div>
         <p class="sum-note">Charged once. No subscription.</p>
         <p class="pay-methods" aria-label="Payment methods"><span>Visa</span><span>Mastercard</span><span>UPI</span><span>PayPal</span></p>
       </div>
