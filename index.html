@@ -71,7 +71,14 @@
 <main id="main">
 
   <!-- HERO -->
-  <section class="hero" data-hero>
+  <section class="hero has-video" data-hero>
+    <!-- Hero video: a 7-second loop cut from Pexels video 7682758 (free licence). -->
+    <video class="hero-video" autoplay muted loop playsinline preload="auto" poster="assets/video/emma-hero.jpg" aria-hidden="true">
+      <source src="assets/video/emma-hero-sm.webm" type="video/webm" media="(max-width: 700px)">
+      <source src="assets/video/emma-hero-sm.mp4" type="video/mp4" media="(max-width: 700px)">
+      <source src="assets/video/emma-hero.webm" type="video/webm">
+      <source src="assets/video/emma-hero.mp4" type="video/mp4">
+    </video>
     <div class="wrap narrow">
       <p class="kicker">Free live class · Online</p>
       <h1><span>Speak English</span> <span>with <em>confidence.</em></span></h1>

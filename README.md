@@ -70,6 +70,7 @@ Load these into your email tool. Merge tags are written as `{{first_name}}`; ren
 
 - **Personal data is masked.** Contact email shows as `XXXX@XXXX.com`, phone as `+44 XXXX XXXXXX` and the street as `XXXX`. On the confirmation page the student's email shows as `XXXX@domain` and the phone keeps only the last 2 digits.
 - **Videos.** The preview lesson and the warm-up video are from BBC Learning English on YouTube and are credited under each player. Swap them for Emma's own videos when they're ready (see the comments in `index.html` and `watch.html`).
+- **Hero video** is a 7-second loop cut from Pexels video 7682758 (free licence), in `assets/video` as MP4 and WebM, with a smaller copy for phones.
 - **Photos** come from Pexels (free licence) and load from Pexels for now. Download them into `assets/img` before launch.
 - **Speaking Guide PDF.** `assets/emma-speaking-guide.pdf` is printed from `guide/speaking-guide.html` (A4, no margins, background graphics on).
 - **Link previews.** Before launch, set `og:image` in `index.html` to the full https URL on the live domain and add `og:url`.
