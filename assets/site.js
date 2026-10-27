@@ -49,16 +49,16 @@
     return s.registeredAt && s.registeredAt > Date.now() - 30 * DAY ? s : {};
   }
 
-  // Personal data is never shown in full: emails become XXXX@domain, phones keep the last 2 digits.
+  // Personal data is never shown in full: emails keep the first 2 letters and the domain, phones the last 2 digits.
   function maskEmail(email) {
     email = String(email || '');
     var at = email.lastIndexOf('@');
-    return at > 0 ? 'XXXX' + email.slice(at) : 'XXXX@XXXX.com';
+    return at > 0 ? email.slice(0, Math.min(2, at)) + '\u2022\u2022\u2022\u2022\u2022' + email.slice(at) : 'your email';
   }
   function maskPhone(code, number) {
     var d = String(number || '').replace(/\D/g, '');
     if (!d) return '';
-    return (code ? code + ' ' : '') + new Array(Math.max(d.length - 1, 5)).join('X') + d.slice(-2);
+    return (code ? code + ' ' : '') + new Array(Math.max(d.length - 1, 5)).join('\u2022') + d.slice(-2);
   }
 
   function wait(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
